@@ -1,20 +1,23 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-import Navbar from './components/Navbar'
-import Mycart from './components/Mycart'
+// import Navbar from './components/Navbar'
+// import Mycart from './components/Mycart'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Navbar />
-      <Mycart />
-    </>
+    <Router basename="/cc23-html-Mycart"> 
+      <Routes>
+        <Route path="/src/components/Navbar.jsx" element={<Navbar />} />
+        <Route path="/src/components/Mycart.jsx" element={<Mycart />} />
+      </Routes>
+    </Router>
   )
 }
 
