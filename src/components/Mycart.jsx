@@ -4,7 +4,7 @@ import Ticket from '../assets/ticket.png'
 
 function Mycart() {
   return (
-    <div class='container h-auto mx-auto max-w-4xl md:h-12 md:items-center mt-12'>
+    <div class='container h-auto mx-auto max-w-4xl md:h-12 md:items-center mt-5'>
         <div class='flex justify-center md:justify-start text-3xl font-bold md:text-3xl md:font-bold md:mb-3'>My Cart</div>
         <div class='md:grid md:grid-cols-2 md:grid-rows-auto md:gap-5 flex flex-col'>
 

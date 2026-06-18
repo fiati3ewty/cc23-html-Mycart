@@ -1,12 +1,15 @@
+import { useState } from "react";
 import React from 'react'
 import Logo from '../assets/jobpasscard-logo-nav.png'
 import Search from '../assets/search.png'
 import Cart from '../assets/cart.png'
 
 function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav>
-        <div class='container flex items-center md:items-center flex-col gap-2 md:gap-0 border border-gray-200 md:h-13 md:mx-auto md:max-w-4xl md:p-2 md:flex-row md:justify-between  md:text-sm'>
+        <div class='flex container items-center md:items-center flex-col gap-2 md:gap-0 border border-gray-200 md:h-13 md:mx-auto md:max-w-4xl md:p-2 md:flex-row md:justify-between  md:text-sm'>
             <div class='mt-3 md:mt-0'>
                 <a href="#">
                     <img class='w-38' src={Logo} alt="" />
