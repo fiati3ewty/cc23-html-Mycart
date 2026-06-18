@@ -5,8 +5,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-// import Navbar from './components/Navbar'
-// import Mycart from './components/Mycart'
+import Navbar from './components/Navbar'
+import Mycart from './components/Mycart'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,8 +14,8 @@ function App() {
   return (
     <Router> 
     <Routes>
-      <Route path="/components/Navbar" element={<Navbar />} />
-      <Route path="/components/Mycart" element={<Mycart />} />
+      <Route path="/" element={<Navbar />} />
+      <Route path="/cart" element={<Mycart />} />
     </Routes>
   </Router>
   )
