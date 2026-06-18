@@ -5,11 +5,11 @@ import Ticket from '../assets/ticket.png'
 function Mycart() {
   return (
     <div class='container h-auto mx-auto max-w-4xl md:h-12 md:items-center mt-12'>
-        <div class='text-3xl font-bold mb-3'>My Cart</div>
-        <div class='grid grid-cols-2 grid-rows-auto gap-5'>
+        <div class='flex justify-center md:justify-start text-3xl font-bold md:text-3xl md:font-bold md:mb-3'>My Cart</div>
+        <div class='md:grid md:grid-cols-2 md:grid-rows-auto md:gap-5 flex flex-col'>
 
-{/* Google Docs             */}
-            <div class='rounded-md h-45 shadow-sm flex'>
+{/* Google Docs */}
+            <div class='order-1 rounded-md h-45 shadow-sm flex'>
                 <div className="h-full w-[20vw] flex items-center justify-center">
                     <img class='w-7 h-7 border border-[#28dbb6] rounded-full p-1' src={Tash} alt=""></img>
                 </div>
@@ -37,8 +37,8 @@ function Mycart() {
             </div>
 
 {/* Order info */}
-            <div class='rounded-md shadow-sm row-span-2 p-7 flex flex-col gap-5'>
-                <div className="w-full font-semibold text-2xl">Order Info</div>
+            <div class='order-3 md:order-2 rounded-md shadow-sm row-span-2 p-7 flex flex-col gap-5'>
+                <div className="flex justify-center md:justify-start w-full font-semibold text-2xl">Order Info</div>
                 <div className=" w-full flex justify-between">
                     <div class='text-gray-500'>Subtotal</div>
                     <div class='font-semibold'>THB 300</div>
@@ -57,7 +57,7 @@ function Mycart() {
             </div>
 
 {/* Google Slides */}
-            <div class='rounded-md h-45 shadow-sm flex'>
+            <div class='order-2 rounded-md h-45 shadow-sm flex'>
                 <div className="h-full w-[20vw] flex items-center justify-center">
                     <img class='w-7 h-7 border border-[#28dbb6] rounded-full p-1' src={Tash} alt=""></img>
                 </div>

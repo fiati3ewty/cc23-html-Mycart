@@ -13,14 +13,14 @@ function App() {
 
   return (
     <Router> 
-    <Routes>
-      <Route path="/" element={
-        <>
-          <Navbar /> 
-          <Mycart />
-        </>
-      }/>
-    </Routes>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Mycart />
+          </>
+        }/>
+      </Routes>
   </Router>
   )
 }
