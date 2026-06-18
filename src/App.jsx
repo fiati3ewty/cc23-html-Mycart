@@ -9,13 +9,17 @@ import Navbar from './components/Navbar'
 import Mycart from './components/Mycart'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <Router> 
     <Routes>
-      <Route path="/" element={<Navbar />} />
-      <Route path="/" element={<Mycart />} />
+      <Route path="/" element={
+        <>
+          <Navbar /> 
+          <Mycart />
+        </>
+      }/>
     </Routes>
   </Router>
   )
