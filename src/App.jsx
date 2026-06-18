@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -12,12 +12,12 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Router basename="/cc23-html-Mycart"> 
-      <Routes>
-        <Route path="/src/components/Navbar.jsx" element={<Navbar />} />
-        <Route path="/src/components/Mycart.jsx" element={<Mycart />} />
-      </Routes>
-    </Router>
+    <Router> 
+    <Routes>
+      <Route path="/" element={<Navbar />} />
+      <Route path="/cart" element={<Mycart />} />
+    </Routes>
+  </Router>
   )
 }
 
